@@ -2,8 +2,14 @@ import requests
 import asyncio
 import pymysql
 import random
+import configparser 
 
-conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='1a2b3c', db='test',charset='utf8') 
+cp = configparser.ConfigParser()
+cp.read('mysql.cfg')
+USER = cp.get('mysql','user')
+PASSWORD = cp.get('mysql','password')
+
+conn = pymysql.connect(host='localhost', port=3306, user=USER, passwd=PASSWORD, db='test',charset='utf8') 
 cur = conn.cursor()
 
 video_list = []
