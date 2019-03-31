@@ -69,17 +69,23 @@ async def func(url):
 
 if __name__ == "__main__":
     avid = 0
-    for i in range(1, 2000):
-        elem = (i - 1) * 10000
-        urls = ['https://api.bilibili.com/x/web-interface/archive/stat?aid={}'.format(j) for j in
-                range(elem, elem + 10000)]
-        for url in urls:
-            tasks = [
-                    asyncio.ensure_future(func(url)),
-                    ]
-            loop = asyncio.get_event_loop()
-            loop.run_until_complete(asyncio.wait(tasks))
-            print('已爬取av%d'%avid)
-            avid +=1
-    conn.close()
-    print('disconnected')
+    try:
+        for i in range(1, 2000):
+            elem = (i - 1) * 10000
+            urls = ['https://api.bilibili.com/x/web-interface/archive/stat?aid={}'.format(j) for j in 
+                    range(elem, elem + 10000)]
+            for url in urls:
+                tasks = [
+                        asyncio.ensure_future(func(url)),
+                        ]
+                loop = asyncio.get_event_loop()
+                loop.run_until_complete(asyncio.wait(tasks))
+                print('已爬取av%d'%avid)
+                avid +=1
+    except KeyboardInterrupt:
+        loop.stop()
+        loop.run_forever()
+    finally:
+        conn.close()
+        loop.close()
+        print('disconnected')
