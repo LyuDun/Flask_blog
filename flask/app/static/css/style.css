@@ -6,13 +6,14 @@ Released for free under the Creative Commons Attribution License
 */
 
 body {
+
 	margin: 0;
 	padding: 0;
 	background: #24292E  repeat;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 300;
-	color: #5B5B5B;
+	color: #24292e;
 }
 
 h1, h2, h3 {
@@ -122,7 +123,7 @@ a:hover {
 /* Splash */
 
 #splash {
-	width: 960px;
+	width: 700px;
 	height: 300px;
 	margin: 0px auto;
 }
@@ -230,7 +231,7 @@ a:hover {
 
 #content {
 	float: left;
-	width: 680px;
+	width: 770px;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -242,7 +243,11 @@ a:hover {
 	border-radius: 8px;
 	background: #FFF;
 }
-
+.post .entry a{
+	border: none;
+	text-decoration: none;
+	color: #24292E;
+}
 .post .title {
 	padding: 7px 0px 0px 0px;
 	letter-spacing: -1px;
@@ -271,6 +276,9 @@ a:hover {
 }
 
 .post .meta a {
+	border: none;
+	text-decoration: none;
+	color: #24292E;
 }
 
 .post .entry {
@@ -289,19 +297,20 @@ a:hover {
 	width: 88px;
 	padding: 5px 5px;
 	margin-right: 10px;
-	background: #222222;
+	background: #24292E;
 	border-radius: 8px;
 	color: #FFFFFF;
 	text-align: center;
 	text-decoration: none;
 }
 
+
 .comments {
 	display: block;
 	float: left;
 	width: 88px;
 	padding: 5px 5px;
-	background: #222222;
+	background: #24292E;
 	color: #FFFFFF;
 	border-radius: 8px;
 	text-align: center;
@@ -312,7 +321,7 @@ a:hover {
 
 #sidebar {
 	float: right;
-	width: 270px;
+	width: 200px;
 	margin: 0px;
 	padding: 30px 0px 0px 0px;
 }

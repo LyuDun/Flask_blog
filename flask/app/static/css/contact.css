@@ -1,0 +1,120 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em;
+	width:none;
+    max-width:none;
+    min-width:none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #333333;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cambria","Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.3em;
+}
+
+samp
+{
+    /* hide <samp> from the browser so we can show cool features in Edge Code */
+    display: none;
+}
+
+/*
+img
+{
+    background: dimgray;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 15px 10px 10px;
+    margin: 10px 0;
+    max-width: 95%;
+}
+*/
+
+#cssmenu {
+    float: center;
+    text-align: center;
+}
+
+p.main {
+	font-size: 1.0em;
+	font-family: "Helvetica Neue", "Arial", "sans-serif", "��謕娍�烐�嚙�";
+	line-height: 1.5em;
+	margin: 5px 0px 15px 0;
+    <!--margin: 5px 160px 15px 0;-->
+	}
+
+#cssmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: auto;
+  position: relative;
+  display: block;
+  height: 42px;
+  font-size: 18px;
+  font-weight: bold;
+  background: transparent repeat-x top left;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  border-bottom: 3px solid #333;
+  border-top: 3px solid #333;
+}
+
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li a {
+  display: block;
+  float: left;
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px 8px 15px;
+}
+#cssmenu li a:hover {
+  color: #000099;
+  height: 22px;
+  background: transparent 0px -30px no-repeat;
+}
+#cssmenu li.active a {
+  display: inline;
+  height: 22px;
+  background: transparent 0px -30px no-repeat;
+  float: left;
+  margin: 0;
+}
+
+ul.news {
+	font-size: 1.0 em;
+	list-style-type: disc;
+	margin-left: 0px;
+	}
+	
+.news li {
+	padding: 0px 0 0px 0px;
+	/*background: no-repeat left center;*/
+	}
+
+ul.sub {
+	font-size: 1.0em;
+	list-style-type: square;
+	margin-left: 0px;
+	}
+	
+.sub li {
+	padding: 0px 0 0px 0px;
+	/*background: no-repeat left center;*/
+	}
