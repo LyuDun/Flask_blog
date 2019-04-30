@@ -13,16 +13,18 @@ Released for free under the Creative Commons Attribution License
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>LvDunn's Blog</title>
-<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|Open+Sans:400,300|-apple-system:400,300' rel='stylesheet' type='text/css' />
+<link href={{ url_for('static',filename='css/googlecode.css') }} rel="stylesheet"/>
+<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script >hljs.initHighlightingOnLoad();</script>
 <link rel="icon" href={{ url_for('static',filename='css/images/Blog.png') }} type="image/x-icon" />
-<link href={{ url_for('static',filename='css/style.css') }} rel="stylesheet" type="text/css" media="screen" />
+<link href={{ url_for('static',filename='css/article.css') }} rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 <div id="wrapper">
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1><a href="#">LvDunn's Blog </a></h1>
+				<h1><a href="#">LvDunn'sBlog </a></h1>
 			</div>
 			<div id="menu">
 				<ul>
@@ -34,9 +36,6 @@ Released for free under the Creative Commons Attribution License
 				</ul>
 			</div>
 		</div>
-		<div id="banner">
-			<div class="content"><img src={{ url_for('static',filename='css/images/img02.jpg') }} width="1000" height="300" alt="" /></div>
-		</div>
 	</div>
 	<!-- end #header -->
 	
@@ -44,8 +43,7 @@ Released for free under the Creative Commons Attribution License
 		<div id="content">
 			<div class="post">
             
-                {% block essay %}
-                {% endblock %}
+		{{ article_html|md|safe }}
                 
 			</div>
 
@@ -53,31 +51,6 @@ Released for free under the Creative Commons Attribution License
 		</div>
 		<!-- end #content -->
 		<!-- 侧边栏 -->
-		<div id="sidebar">
-			<ul>
-				<li>
-					<h2>数据结构整理</h2>
-					<ul>
-						<li><a href='http://www.cqcqhelloworld.top/article/1/')>1.顺序表</a></li>
-		
-					</ul>
-				</li>
-				<li>
-					<h2>Python文章</h2>
-					<ul>
-						<li><a href=url_for('python')>Python文章传送门</a></li>
-				
-					</ul>
-				</li>
-				<li>
-					<h2>其他</h2>
-					<ul>
-						<li><a href=url_for('other')>传送门</a></li>
-						
-					</ul>
-				</li>
-			</ul>
-		</div>
 		<!-- end #sidebar -->
 		<div style="clear: both;">&nbsp;</div>
 	</div>
