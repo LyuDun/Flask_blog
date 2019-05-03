@@ -256,6 +256,7 @@ a:hover {
 .post .title a {
 	border: none;
 	text-decoration: none;
+	font-size: 25px;
 	color: #222222;
 }
 
