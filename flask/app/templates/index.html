@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block essay %}
-<h2 class="title"><a href="http://www.cqcqhelloworld.top/article/1/">数据结构的标准形式（C、Python版本）：1.顺序表 </a></h2>
-<p>顺序表基本操作、InitList 初始化、Length 求表长、LocateElem 按值查找、ListInsert 插入操作、
-ListDelete 删除操作</p>
-<p class="links"><a href="http://www.cqcqhelloworld.top/article/1/" class="more">Read More</a></p>
+    {% for article_href, article_name in articles.items()  %}
+        <div class="post">    
+            <h2 class="title"><a href={{ article_href }}>{{ article_name }}</a></h2>
+	    <p class="links"><a href={{ article_href }} class="more">Read More</a></p>
+	</div>
+    {% endfor %}
 {% endblock %}
