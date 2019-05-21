@@ -28,4 +28,7 @@ def show_article(article_category,id):
         if (operator.eq(file.split('-', 1)[0], str(id))):
             return render_template('article.html',article_html=os.path.join(article_dir,file))
 
-
+@app.route('/Visual-Map',methods=['GET','POST'])
+def visual_map():
+    map_list = ['10月','2月','去过']
+    return render_template('map.html',map_list = map_list)
