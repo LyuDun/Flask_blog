@@ -11,13 +11,13 @@ body {
 	padding: 0;
 	background: #24292E  repeat;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 300;
 	color: #24292e;
 }
 
 h1, h2, h3 {
-	margin: 0;
+	margin:  0;
 	padding: 0;
 	font-family: 'Archivo Narrow', sans-serif;
 	font-weight: normal;

@@ -12,14 +12,14 @@ body {
 	background: #24292E  repeat;
 	/*font-family: Consolas, 'Courier New', monospace;*/
 	font-family: 'FiraCode';
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 300;
 	color: #24292e;
 }
 
 h1, h2, h3 {
-	margin: 0;
-	padding: 0;
+	margin: 10px 0px 5px 0;
+	padding: 1px;
 	font-family: 'Archivo Narrow', sans-serif;
 	font-weight: normal;
 	font-weight: 200;
@@ -297,6 +297,7 @@ article code {
 .links {
 	padding-top: 20px;
 	margin-bottom: 30px;
+	color:#FF0000;
 }
 
 .more {
@@ -558,4 +559,10 @@ article code {
 
 .list-style1 a {
 	color: #7F7F7F;
+}
+
+a:-webkit-any-link {
+    color: #345E9B;
+    cursor: pointer;
+    text-decoration: underline;
 }

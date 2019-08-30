@@ -1,10 +1,8 @@
 from app import app
-from flask import render_template
+from flask import render_template, send_from_directory, request
 import os
 import operator
 
-
-#app.jinja_env.filters['md'] = md
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -49,3 +47,9 @@ def show_article(article_category, id):
         if (operator.eq(file.split('-', 1)[0], str(id))):
             return render_template('article.html',
                                    article_html=os.path.join(article_dir, file))
+
+
+# @app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])

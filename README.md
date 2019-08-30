@@ -44,7 +44,7 @@ gunicorn -w 5 -b 0.0.0.0:80 app:app --reload -t 500 -D
 |   |   |   |   `-- css
 |   |   |   |       |-- ......
 |   |   |   |       |-- images
-|   |   |   |       |   `-- ......
+|   |   |   |           `-- ......
 |   |   |   |-- templates
 |   |   |   |   `-- ......
 |   |   |   `-- views.py
@@ -57,4 +57,6 @@ gunicorn -w 5 -b 0.0.0.0:80 app:app --reload -t 500 -D
 
 文件名命名规则为：x-文件名.md (x:代表文章序号)
 
-举例：我在Flask_blog/flask/app/markdwon_article/Python/ 目录下新建了一篇md文章“1-一些python基础知识整理.md”。外网访问地址就是：http://www.cqcqhelloworld.top/article/Python/1/
+举例：我在Flask_blog/flask/app/markdwon_article/Python/ 目录下,新建了一篇md文章 “1-一些python基础知识整理.md”。
+
+外网访问地址就是：http://www.cqcqhelloworld.top/article/Python/1/
