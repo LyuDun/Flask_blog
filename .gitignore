@@ -1,3 +1,5 @@
 *.pyc
+*.out
+*.cfg
 flask/app/static/sitemap.xml
 flask/app/markdwon_article/
