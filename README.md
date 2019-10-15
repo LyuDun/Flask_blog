@@ -53,10 +53,10 @@ gunicorn -w 5 -b 0.0.0.0:80 app:app --reload -t 500 -D
 ```
 
 ## markdown文章维护方式（暂时）
-在目录Flask_blog/flask/app/markdwon_article 下，你可以新建文件夹来对文章分类维护，或者直接新建“1-某某.md”markdown文章。
+在目录Flask_blog/flask/app/markdwon_article 下，你可以新建文件夹来对文章分类维护，或者直接新建“某某.md” markdown文章。
 
-文件名命名规则为：x-文件名.md (x:代表文章序号)
+文件名命名规则为：文件名.md 
 
-举例：我在Flask_blog/flask/app/markdwon_article/Python/ 目录下,新建了一篇md文章 “1-一些python基础知识整理.md”。
+举例：我在Flask_blog/flask/app/markdwon_article/Python/ 目录下,新建了一篇md文章 “一些python基础知识整理.md”。
 
-外网访问地址就是：http://www.cqcqhelloworld.top/article/Python/1/
+外网访问地址就是：[http://www.cqcqhelloworld.top/article/Python/一些python基础知识整理](http://www.cqcqhelloworld.top/article/Python/一些python基础知识整理)  
