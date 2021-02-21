@@ -24,9 +24,9 @@ cd Flask_blog
 
 pip install -r requirements.txt
 
-cd app
+cd flask
 
-gunicorn -w 5 -b 0.0.0.0:80 app:app --reload -t 500 -D
+gunicorn -w 5 -b 0.0.0.0:80 Webapp:app --reload -t 500 -D
 ```
 
 ## 目录结构
@@ -35,7 +35,7 @@ gunicorn -w 5 -b 0.0.0.0:80 app:app --reload -t 500 -D
 |   |-- LICENSE
 |   |-- README.md
 |   |-- flask
-|   |   |-- app
+|   |   |-- Webapp
 |   |   |   |-- __init__.py
 |   |   |   |-- app.py
 |   |   |   |-- markdwon_article(markdown文章存放目录)
@@ -53,7 +53,7 @@ gunicorn -w 5 -b 0.0.0.0:80 app:app --reload -t 500 -D
 ```
 
 ## markdown文章维护方式（暂时）
-在目录Flask_blog/flask/app/markdwon_article 下，你可以新建文件夹来对文章分类维护，或者直接新建“某某.md” markdown文章。
+在目录Flask_blog/flask/Webapp/markdwon_article 下，你可以新建文件夹来对文章分类维护，或者直接新建“某某.md” markdown文章。
 
 文件名命名规则为：文件名.md 
 
