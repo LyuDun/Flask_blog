@@ -1,5 +1,6 @@
 # flask blog
-由Flask实现的个人博客，效果展示：[www.cqcqhelloworld.top](http://www.cqcqhelloworld.top/)
+由Flask实现的个人博客，效果展示：
+
 
 由Flask + Gunicorn（WSGI服务器） 部署
 
@@ -18,7 +19,7 @@
 ## 使用(部署)方式
 
 ```bash
-git clone https://github.com/LvDunn/Flask_blog.git
+git clone https://github.com/LyuDun/Flask_blog.git
 
 cd Flask_blog
 
